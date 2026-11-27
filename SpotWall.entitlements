@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Песочница: без неё приложение не сможет выйти в сеть, если включит её Xcode -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    <!-- Исходящие HTTPS-запросы: Spotify OAuth/API и LRCLIB -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+</dict>
+</plist>
