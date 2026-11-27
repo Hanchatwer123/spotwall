@@ -4,9 +4,6 @@ A small project that involves around creating a widget that gets music and lyric
 
 A borderless, transparent window featuring a circular visualizer (album art disc + spectrum rays), floating synchronized lyrics with blur and glow effects, and Spotify playback controls (play/pause/next/prev).
 
-> The video from your message didn't come through, so the design is based on your text description.
-> The code was written without compiling (there is no macOS/Xcode in my environment), so minor tweaks may be needed on the first build.
-
 ## Structure
 
 ```
@@ -98,5 +95,3 @@ Only audio is captured (screen frames are ignored). Without this permission, the
 * **Layout & Dimensions**: `ContentView` (1000×640 window; disc on the left, lyrics on the right).
 * **Number of Rays/Bands**: `SpectrumAnalyzer.bandCount`.
 * **Lyric Sync Offset**: `+ 0.25` in `LyricsView`.
-* **Local Control**: Instead of the Web API, you can control a local Spotify client via AppleScript (`tell application "Spotify"`), though doing so inside the sandbox requires the `com.apple.security.temporary-exception.apple-events` entitlement.
-
